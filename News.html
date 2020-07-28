@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pokemon Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/index.css">
+    <script src="Assets/JS/site.js"></script>
+</head>
+
+<body>
+    <div id="main">
+
+        <header>
+            <img class="img" src="Assets/Images/Component.png" alt="header">
+        </header>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Galar.html">Galar Region</a></li>
+            <li><a href="GymLeaders.html">Gym Leaders</a></li>
+            <li><a href="PokeQuiz.html">Poke Quiz</a></li>
+            <li><a class="active" href="News.html">News & Contact</a></li>
+        </ul>
+
+
+        <div class="container-fluid text-center">
+            <br>
+            <h1>Check the latest news and get in contact with us! </h1>
+            <br>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item"><a class="card"
+                    href="https://swordshield.pokemon.com/en-us/buy-now/gigantamax-pokemon"><img
+                        src="Assets/Images/box1.png" class="img-fluid" alt="box1"></a></div>
+            <div class="grid-item"><a class="card"
+                    href="https://swordshield.pokemon.com/en-us/gameplay/max-raid-battles/encounter-gigantamax-pokemon/"><img
+                        src="Assets/Images/box2.png" class="img-fluid" alt="box2"></a></div>
+            <div class="grid-item"><a class="card"
+                    href="https://swordshield.pokemon.com/en-us/people-galar-region/gym-leaders/"><img
+                        src="Assets/Images/box3.png" class="img-fluid" alt="box3"></a></div>
+            <div class="grid-item"><a class="card"
+                    href="https://swordshield.pokemon.com/en-us/pokemon-galar-region/gigantamax-snorlax/"><img
+                        src="Assets/Images/box4.png" class="img-fluid" alt="box4"></a></div>
+            <div class="grid-item"><a class="card"
+                    href="https://swordshield.pokemon.com/en-us/pokemon-galar-region/sirfetchd/"><img
+                        src="Assets/Images/box5.png" class="img-fluid" alt="box5"></a></div>
+            <div class="grid-item"><a class="card"
+                    href="https://swordshield.pokemon.com/en-us/pokemon-galar-region/morpeko/"><img
+                        src="Assets/Images/box6.png" class="img-fluid" alt="box6"></a></div>
+        </div>
+
+
+        <hr>
+        <div class="form">
+            <form action="server-script-url" name="regForm" onsubmit="return(validate());">
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>Send us a message!</label>
+                        <textarea name="message" rows="10" cols="44">
+
+                </textarea>
+
+                        <br>
+                        <div>
+                            <label>Full Name:</label><span class="errorMessage" id="fullname"></span>
+                            <input type="text" class="generalInput" name="fullname">
+                        </div>
+
+                        <div>
+                            <label>Country:</label><span class="errorMessage" id="country"></span>
+                            <input type="text" class="generalInput" name="country">
+                        </div>
+
+                        <div>
+                            <label>Email:</label><span class="errorMessage" id="email"></span>
+                            <input type="text" class="generalInput" name="email">
+                        </div>
+
+                        <div>
+                            <label>Tel Number:</label><span class="errorMessage" id="tel"></span>
+                            <input type="text" class="generalInput" name="tel">
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 justify-content-around">
+                        <div>
+                            <label>Favourite Pokemons</label><br>
+                            <input class="clickInput" type="checkbox" name="Pokemon" value="Scorbunny"> Scorbunny<br>
+                            <input class="clickInput" type="checkbox" name="Pokemon" value="Sobble"> Sobble<br>
+                            <input class="clickInput" type="checkbox" name="Pokemon" value="Grookey"> Grookey<br>
+                            <input class="clickInput" type="checkbox" name="Pokemon" value="Pikachu"> Pikachu<br>
+                        </div>
+                        <br>
+                        <div>
+                            <label>What Pokemon game do you have?</label><br>
+                            <select class="generalInput">
+                                <option name="game" value="PokemonSword"> Pokemon Sword<br>
+                                <option name="game" value="PkemoonShield"> Pokemoon Shield<br>
+                            </select>
+                        </div>
+
+                        <br>
+                        <div>
+                            <label>Rate us!</label><br><span class="errorMessage" id="rate"></span>
+                            <input type="radio" name="rate" value="quit"> Quit it!<br>
+                            <input type="radio" name="rate" value="impro"> Needs improvement<br>
+                            <input type="radio" name="rate" value="good"> Its good!<br>
+                            <input type="radio" name="rate" value="love"> I love it!<br>
+                            <input type="radio" name="rate" value="evah"> Best website evah!<br>
+                        </div>
+
+                        <br>
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <footer class="bg-dark text-center text-white pt-4 pb-4">
+            <h5>site by: Armando 2019</h5>
+        </footer>
+    </div>
+</body>
+
+</html>

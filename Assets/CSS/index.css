@@ -1,0 +1,175 @@
+body{
+    background-color: white;
+}
+
+#main{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    border: 1px black solid;
+}
+
+.img{
+width: 100%;
+height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(26, 102, 153);
+  }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(185, 101, 33);
+  }
+
+.active {
+    background-color: rgb(218, 44, 117);
+}
+
+.col-sm-8 p{
+    color:black;
+    text-align: justify;
+    font-size: medium;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.Nessa {
+    position: relative;
+    display: inline-block;
+}
+.Nessa .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.Nessa:hover .img-top {
+    display: inline;
+}
+
+.col-sm-3 td{
+    padding: 5px;
+    border: dashed;
+    border-color: red;
+}
+
+.form label{
+    color:rgb(255, 0, 128);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.generalInput{
+    width: 375px;
+    display: block;
+    border: 1px grey solid;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.clickInput{
+    border: 1px grey solid;
+    margin-bottom: 7px;
+    margin-right: 10px;
+    }
+
+.errorMessage {
+    color:red;
+    font-size: 15px;
+    font weight: bold;
+}
+
+.col-sm-6{
+    padding: 5%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background: url(../Images/page-header_2x.png);
+    background-size: 100%, 100%;
+    padding: 5%;
+}
+
+.grid-item{
+    background:white;
+    border: 1px black dashed;
+    padding: 2%;
+    text-align: center;
+}
+
+
+/* Wide Screens */
+@media only screen and (max-width : 1200px) {
+    html, body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #DDD;
+        height: 100%;
+        font-size: 20px;
+        }
+    }
+
+/* Desktops */
+@media only screen and (max-width : 992px) {
+    html, body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #DDD;
+        height: 100%;
+        font-size: 16px;
+        }
+}
+/* Tablets */
+@media only screen and (max-width : 768px) {
+    html, body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #DDD;
+        height: 100%;
+        font-size: 12px;
+        }
+    }
+/* Phones */
+@media only screen and (max-width : 480px) {
+    html, body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #DDD;
+        height: 100%;
+        font-size: 10px;
+        }
+    }
+
+/* Custom */
+@media only screen and (max-width : 320px) {
+    html, body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #DDD;
+        height: 100%;
+        font-size: 8px;
+        }
+    }
